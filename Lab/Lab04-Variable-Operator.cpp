@@ -1,4 +1,4 @@
-/*
+v/*
     เขียนโปรแกรมภาษาซีเพื่อรับข้อมูลพนักงานของบริษัทซอร์ฟแวร์ โดยรับข้อมูล รหัสประจำตัวพนักงาน , จำนวนชั่วโมงที่ทำงาน , รายได้ต่อชั่วโมง จากนั้นให้แสดงข้อมูลเลขประจำตัวพนักงาน พร้อมกับรายได้ทั้งหมดที่หนักงานจะได้รับทั้งหมด
 
     Test case:
@@ -28,8 +28,17 @@
 #include <stdio.h>
 
 int main() {
-
-    //--| YOUR CODE HERE
-
+    int id ;
+    float hrs ;
+    float Salary ;
+    printf( "Enter Employees ID(Max. 10 chars) :\n" ) ;
+    scanf( "%d",&id ) ;
+    printf( "Enter working hrs :\n" ) ;
+    scanf( "%f",&hrs ) ;
+    printf( "Enter Salary amount/hr :\n" ) ;
+    scanf( "%f",&Salary ) ;
+    printf( "Expected Output :\n" ) ;
+    printf( "Employees ID = %d\n", id ) ;
+    printf( "Salary = U$ %0.2f", Salary * hrs ) ;
     return 0 ;
 }//end main function
